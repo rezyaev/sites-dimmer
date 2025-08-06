@@ -6,7 +6,7 @@
 	"permissions": ["tabs", "storage"],
 	"action": {
 		"default_popup": "popup/popup.html",
-		"default_icon": "icon.png"
+		"default_icon": "assets/icon.png"
 	},
 	"content_scripts": [
 		{
