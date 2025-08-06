@@ -1,0 +1,23 @@
+{
+	"name": "Sites Dimmer",
+	"description": "Base Level Extension",
+	"version": "1.0",
+	"manifest_version": 3,
+	"permissions": ["tabs", "storage"],
+	"action": {
+		"default_popup": "popup/popup.html",
+		"default_icon": "icon.png"
+	},
+	"content_scripts": [
+		{
+			"js": ["script.js"],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": ["lib/storage.js", "lib/url.js"],
+			"matches": ["<all_urls>"]
+		}
+	]
+}

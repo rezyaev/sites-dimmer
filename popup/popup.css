@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+	transition: all 200ms;
+}
+
+h1,
+input {
+	margin: 0;
+}
+
+input {
+	appearance: none;
+	border: none;
+
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+body {
+	width: 20rem;
+	margin: 1rem;
+	font-family: InterVariable, sans-serif;
+	background: oklch(26.9% 0 0);
+	color: oklch(98.5% 0 0);
+}
+
+h1 {
+	margin-bottom: 1rem;
+	font-size: 1.125rem;
+	line-height: 1.5;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+label {
+	font-size: 0.875rem;
+	line-height: 1.4;
+}
+
+.input-container {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.toggle {
+	position: relative;
+	width: 2.75rem;
+	padding: 2px;
+	background: oklch(43.9% 0 0);
+	border-radius: 1rem;
+
+	& div {
+		width: 1.25rem;
+		height: 1.25rem;
+		border-radius: 100%;
+		background: oklch(20.5% 0 0);
+	}
+
+	& input[type="checkbox"] {
+		position: absolute;
+		inset: 0;
+		cursor: pointer;
+	}
+}
+
+.toggle:has(input:checked) {
+	background: oklch(72.3% 0.219 149.579);
+
+	& div {
+		translate: 1.25rem;
+	}
+}
+
+input[type="number"] {
+	width: 2rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	background: oklch(43.9% 0 0);
+	color: oklch(98.5% 0 0);
+	font-size: 0.875rem;
+}

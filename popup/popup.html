@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+		<link rel="stylesheet" href="popup.css" />
+		<script type="module" src="popup.js"></script>
+	</head>
+	<body>
+		<h1>Sites Dimmer</h1>
+
+		<form>
+			<div class="input-container">
+				<div class="toggle">
+					<div></div>
+					<input type="checkbox" id="active" />
+				</div>
+
+				<label for="active">Active on current site</label>
+			</div>
+
+			<div class="input-container">
+				<input type="number" id="intensity" min="0" max="100" />
+				<label for="intensity">Dimmer intensity</label>
+			</div>
+		</form>
+	</body>
+</html>
