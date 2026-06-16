@@ -1,7 +1,7 @@
 {
 	"name": "Sites Dimmer",
-	"description": "Base Level Extension",
-	"version": "1.0",
+	"description": "Dim bright websites and reduce eye strain with customizable per-site brightness controls",
+	"version": "1.1",
 	"manifest_version": 3,
 	"permissions": ["tabs", "storage"],
 	"action": {
